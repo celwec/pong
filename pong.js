@@ -13,19 +13,19 @@ var CANVAS_WIDTH   = 800,
     SCREEN_PADDING =  40; // Distance between paddles and left and right border
 
 var PADDLE_WIDTH  =  20,
-		PADDLE_HEIGHT = 100;
+    PADDLE_HEIGHT = 100;
 
 var FPS = 60; // How many times the game updates per second
 
 var NET = true; // Draw dashed center line?
 
 var DEFAULT_BALL_SPEED = 10,
-		MAX_BALL_SPEED     = 20;
+    MAX_BALL_SPEED     = 20;
 
 var VICTORY_SCORE = 10;
 
 var BACKGROUND_COLOR  = "#101010",
-		ENVIRONMENT_COLOR = "#c0c0c0",
+    ENVIRONMENT_COLOR = "#c0c0c0",
     ACTOR_COLOR       = "#f0f0f0";
 
 /*
