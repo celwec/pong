@@ -10,7 +10,7 @@
 
 var CANVAS_WIDTH   = 800,
     CANVAS_HEIGHT  = 600,
-		SCREEN_PADDING =  40; // Distance between paddles and left and right border
+    SCREEN_PADDING =  40; // Distance between paddles and left and right border
 
 var PADDLE_WIDTH  =  20,
 		PADDLE_HEIGHT = 100;
@@ -22,11 +22,11 @@ var NET = true; // Draw dashed center line?
 var DEFAULT_BALL_SPEED = 10,
 		MAX_BALL_SPEED     = 20;
 
-var VICTORY_SCORE = 1;
+var VICTORY_SCORE = 10;
 
 var BACKGROUND_COLOR  = "#101010",
 		ENVIRONMENT_COLOR = "#c0c0c0",
-		ACTOR_COLOR       = "#f0f0f0";
+    ACTOR_COLOR       = "#f0f0f0";
 
 /*
 ** -----------------------------------------------------------------------------
@@ -35,7 +35,7 @@ var BACKGROUND_COLOR  = "#101010",
 */
 
 var canvas  = document.getElementById("pong"),
-		context = canvas.getContext("2d");
+    context = canvas.getContext("2d");
 
 canvas.width  = CANVAS_WIDTH;
 canvas.height = CANVAS_HEIGHT;
@@ -54,7 +54,7 @@ var gameIsRunning = false,
 */
 
 var player = {
-  name:"Player",
+	name:"Player",
 	x:SCREEN_PADDING,
 	y:canvas.height / 2 - PADDLE_HEIGHT / 2,
 	w:PADDLE_WIDTH,
@@ -62,7 +62,7 @@ var player = {
 };
 
 var computer = {
-  name:"Computer",
+	name:"Computer",
 	x:canvas.width - SCREEN_PADDING - PADDLE_WIDTH,
 	y:canvas.height / 2 - PADDLE_HEIGHT / 2,
 	w:PADDLE_WIDTH,
@@ -80,7 +80,7 @@ var ball = {
 var score = {
 	player:0,
 	computer:0,
-  winner:""
+	winner:""
 };
 
 /*
